@@ -1,0 +1,173 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+.nota-musical {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 110px;
+    z-index: 1001;
+    opacity: 0.8;
+}
+
+/*Parte de navegación*/
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: #000000;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.nav-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 5px;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/*Información general de la página, o sea la parte de las letras grandes*/
+header {
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.letrasG {
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(69, 69, 69);
+    font-family: 'Playfair Display', serif;
+    line-height: 1.05;
+    color: papayawhip;
+    margin-bottom: 10px;
+}
+
+.letrasG em {
+    color: goldenrod;
+    font-style: italic;
+}
+
+header p {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin-top: 20px;
+}
+/*Esta parte es para definir el cuerpo de la pagina, se centra en los colores, el tipo de letra y el espaciado entre el nav, el header y el section*/
+body {
+    background-color: #488998;
+    color: #000000;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    padding-top: 120px;
+}
+
+/*Contenido principal de música, esta parte se centra en los colores y el estilo en general de los recuadros blancos que contienen la información*/
+.tema-musical {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.tema-musical h2 {
+    font-size: 2rem;
+    color: #1e2a3e;
+    border-left: 5px solid #ffb703;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tema-musical h3 {
+    font-size: 1.3rem;
+    color: #2d3e4f;
+    margin: 1.5rem 0 0.8rem 0;
+    padding-left: 0.5rem;
+}
+
+.tema-musical p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.tema-musical ul {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.tema-musical li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.tema-musical strong {
+    color: #ffb703;
+    font-weight: 700;
+}
+
+/* Scroll margin para que no tape el nav */
+.tema-musical h2 {
+    scroll-margin-top: 100px;
+}
+
+/*Botones*/
+.contenedor-botones {
+    background-color: #2e2e2e;
+    position: static;
+    justify-content: center;
+    margin-top: 0px;
+    bottom: 0;
+    width: 98%;
+    padding: 10px;
+    align-items: center;
+}
+
+.btn-terciario {
+    background-color: #111111d4;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/*Pie de página con el copyright*/
+footer {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    width: 99%;
+    margin-top: auto;
+}
